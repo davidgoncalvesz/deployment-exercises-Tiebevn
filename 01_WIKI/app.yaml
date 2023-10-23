@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: wiki
+  name: wiki-test
   namespace: argocd
 spec:
   sources:
@@ -11,7 +11,7 @@ spec:
     helm:
       valueFiles:
         - $values/01_WIKI/values.yaml
-  - repoURL: 'https://github.com/Cloud-Computing-2324/deployment-exercises-Tiebevn.git'
+  - repoURL: 'https://github.com/davidgoncalvesz/deployment-exercises-Tiebevn.git'
     targetRevision: main
     ref: values
   destination:
