@@ -8,6 +8,9 @@ spec:
   - repoURL: https://charts.bitnami.com/bitnami
     chart: redmine
     targetRevision: 25.0.1
+    helm:
+      valueFiles:
+        - $values/03_REDMINE/values.yaml
   - repoURL: 'https://github.com/davidgoncalvesz/deployment-exercises-Tiebevn.git'
     targetRevision: main
     ref: values
