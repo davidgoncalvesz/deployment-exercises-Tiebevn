@@ -1,7 +1,7 @@
 ingress:
   enabled: true
   annotations:
-    cert-manager.io/cluster-issuer: cluster-issuer
+    cert-manager.io/cluster-issuer: example-issuer
   hosts:
     - host: uptime-demo.92.co.ucll.cloud
       paths:
