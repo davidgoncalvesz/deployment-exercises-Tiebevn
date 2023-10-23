@@ -5,7 +5,7 @@ metadata:
   namespace: default
 spec:
   sources:
-  - repoURL: https://charts.bitnami.com/bitnami
+  - repoURL: https://charts.truecharts.org/
     chart: redmine
   - repoURL: 'https://github.com/davidgoncalvesz/deployment-exercises-Tiebevn.git'
     targetRevision: main
