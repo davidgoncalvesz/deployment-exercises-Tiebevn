@@ -1,13 +1,7 @@
 ingress:
   enabled: true
-  annotations:
-    cert-manager.io/cluster-issuer: example-issuer
   hosts:
     - host: redmine-demo.92.co.ucll.cloud
       paths:
         - path: /
           pathType: Prefix
-  tls:
-    - secretName: redmine-demo-kuma-tls
-      hosts:
-        - redmine-demo.92.co.ucll.cloud
